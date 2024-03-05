@@ -2,17 +2,16 @@ import os
 import re
 import time
 from datetime import datetime
-from typing import Any, Callable, Iterable, NewType
+from typing import Any, Iterable, Callable
+from fake_useragent import UserAgent
 
 import openpyxl
 import requests
 from bs4 import BeautifulSoup
 
 
-function = NewType('function', Callable[[Any], Any])
 
-
-def time_decor(func: function) -> function:
+def time_decor(func: Callable):
     """Декоратор, замеряющий время работы программы."""
 
     def wrapper(*args, **kwargs) -> None:
@@ -29,19 +28,10 @@ def change_name(data: list[str], replacement: dict[str, str]) -> list[str]:
     Принимает список значений data = [имя, кол-во],
     заменяет слово из имени на значение из словаря replacement.
     """
-    words = data[0].split(' ')
-    for index in range(len(words)):
-        if words[index] not in replacement:
-            continue
-        if (
-            replacement[words[index]] == 'с'
-            and replacement[words[index + 1]] == 'к'
-        ):
-            words[index] = 'ск'
-        else:
-            words[index] = replacement[words[index]]
-    data[0] = ' '.join(words)
-    return data
+    name, quantity = data
+    if replacement.get(name):
+        name = replacement[name]
+    return [name, quantity]
 
 
 def get_data(product: BeautifulSoup) -> list[str]:
@@ -74,7 +64,7 @@ def scraping_url(url: str) -> BeautifulSoup:
     """
     Принимает url-адрес. Парсит страницу, html -> xml.
     """
-    html_code = requests.get(url).content.decode('utf8')
+    html_code = requests.get(url, headers={'user-agent': UserAgent().chrome}).content.decode('utf8')
     soup = BeautifulSoup(html_code, features='html.parser')
     return soup
 
@@ -98,7 +88,7 @@ def get_names_from_file(filename: str) -> dict[str, str]:
     return data
 
 
-def iteration(func: function, data: Iterable, *args) -> list[Any]:
+def iteration(func: Callable, data: Iterable, *args) -> list[Any]:
     """Функция-итератор."""
     new_data = [func(item, *args) for item in data]
     return new_data
