@@ -14,6 +14,3 @@ class Services(AbstractServices):
     
     def delete_value(self, index: str):
         self._db.delete(int(index))
-
-    def start(self):
-        ...

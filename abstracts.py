@@ -39,9 +39,8 @@ class AbstractServices(ABC):
     def delete_value(self, index: str):
         ...
 
+
+class AbstractParser(ABC):
     @abstractmethod
     def start(self):
         ...
-
-
-

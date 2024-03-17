@@ -1,14 +1,13 @@
 from tkinter import Entry, Label, Tk, ttk, Listbox, Variable
 from typing import Callable
-
-from abstracts import AbstractServices
+from gui_commands import CommandsOfGUI
 
 
 class GraphicInterface(Tk):
     def __init__(self, services, *args, **kwargs) -> None:
         Tk.__init__(self, *args, **kwargs)
         self.title('Программа сбора информации о товарах')
-        self.services: AbstractServices = services
+        self.services: CommandsOfGUI = services
 
         self.start = ttk.Button(self, text='Запуск', command=self.start, width=15)
         self.start.grid(column=0, row=0, rowspan=2)
@@ -66,5 +65,4 @@ class GraphicInterface(Tk):
 
 
     def start(self):
-        ...
-        
+        self.services.init_start()
