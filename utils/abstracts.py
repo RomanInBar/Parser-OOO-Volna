@@ -1,8 +1,8 @@
 from abc import abstractmethod, ABC
-from tkinter import Tk
 
 
 class AbstractDatabseCSV(ABC):
+    """Абстрактный класс хранилища данных."""
     @abstractmethod
     def write(self, value: list[str]) -> None:
         ...
@@ -16,17 +16,8 @@ class AbstractDatabseCSV(ABC):
         ...
 
 
-class ABSGraphicInterface(ABC):    
-    old_value_label: Tk
-    old_value_field: Tk
-    new_value_label: Tk
-    new_value_field: Tk
-    add_value_button: Tk
-    start_button: Tk
-    list_of_values: Tk
-
-
 class AbstractServices(ABC):
+    """Абстрактный класс сервисов графического интерфейса."""
     @abstractmethod
     def add_value(self, value: list[str]):
         ...
@@ -41,6 +32,25 @@ class AbstractServices(ABC):
 
 
 class AbstractParser(ABC):
+    """Абстрактный класс парсера."""
     @abstractmethod
     def start(self):
+        ...
+
+
+class AbstractGUICommands(ABC):
+    @abstractmethod
+    def get_all_data(self):
+        ...
+
+    @abstractmethod
+    def add_value(self, *args):
+        ...
+
+    @abstractmethod
+    def delete_value(self, *args):
+        ...
+
+    @abstractmethod
+    def init_start(self):
         ...

@@ -8,6 +8,6 @@
 Программа обернута декоратором для замера времени работы.  
   
 Код: синхронный.  
-Стек: Python 3.11, BeautifulSoup4, openpyxl  
+Стек: Python 3.11, BeautifulSoup4, openpyxl, tkinter
 Чистота кода: Flake8, black, isort  
 Прописана аннотация типов, docstrings.   
