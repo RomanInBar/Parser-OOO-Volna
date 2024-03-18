@@ -10,9 +10,11 @@ class Services(AbstractServices):
     def add_value(self, values: list[str]):
         """Добавить запись."""
         logging.info('Инициализирую программу записи данных')
-        self._db.write(values)
+        if not self._data_validation(values):
+            logging.warning('Новые данные не прошли валидацию')
+        else:
+            self._db.write(values)
         
-
     def get_all_data(self) -> list[list[str]]:
         """Получить все данные из хранилища."""
         logging.info('Инициализирую программу чтения данных')
@@ -23,3 +25,13 @@ class Services(AbstractServices):
         """Удалить запись из хранилища."""
         logging.info('Инициализирую программу удаления данных')
         self._db.delete(int(index))
+
+    def _data_validation(self, data: list[str]) -> bool:
+        try:
+            assert data
+            assert len(data) == 2
+            assert data[0]
+            assert data[1]
+            return True
+        except AssertionError:
+            return False

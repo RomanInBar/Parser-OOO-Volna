@@ -2,6 +2,8 @@ from tkinter import Entry, Label, Tk, ttk, Listbox, Variable
 from typing import Callable
 from utils.abstracts import AbstractGUICommands
 import logging
+from utils.constants import RESULT_FILE_NAME
+from functools import wraps
 
 
 class GraphicInterface(Tk):
@@ -10,19 +12,29 @@ class GraphicInterface(Tk):
         Tk.__init__(self, *args, **kwargs)
         self.title('Программа сбора информации о товарах')
         self.services: AbstractGUICommands = services
+    
+    def mainloop(self, n: int = 0) -> None:
+        self.draw_start_window()
+        return super().mainloop(n)
+        
+    def draw_start_window(self):
+        """Старторое окно программы."""
+        self.start_button = ttk.Button(self, text='Запуск', command=self.start, width=15)
+        self.start_button.grid(column=0, row=0, rowspan=2)
 
-        self.start = ttk.Button(self, text='Запуск', command=self.start, width=15)
-        self.start.grid(column=0, row=0, rowspan=2)
+        self.replaced_values_button = ttk.Button(self, text='Список значений', command=self.draw_window_with_list_values, width=15)
+        self.replaced_values_button.grid(column=1, row=0, rowspan=2)
 
-        self.data = ttk.Button(self, text='Список значений', command=self.show_all_data, width=15)
-        self.data.grid(column=1, row=0, rowspan=2)
+        self.done = Label(self, text='')
+        self.done.grid(column=0, row=2, columnspan=2)
 
     def redrawing(func: Callable):
-        """Декоратор для перерисоки графики."""
+        """Декоратор для перерисовки окна со списком значений."""
+        @wraps(func)
         def wrapper(*args, **kwargs):
             response = func(*args, **kwargs)
             self = args[0]
-            self.show_all_data()
+            self.draw_window_with_list_values()
             logging.info('Графический интерфейс перерисован')
             return response
         return wrapper
@@ -53,7 +65,7 @@ class GraphicInterface(Tk):
         except IndexError:
             logging.exception('Индекс записи из списка не найден в хранилище данных.')
 
-    def show_all_data(self) -> None:
+    def draw_window_with_list_values(self) -> None:
         """Отрисока графического интерфейса."""
         self.old_value_label = Label(self, text='Текущее значение')
         self.old_value_label.grid(column=3, row=0)
@@ -78,8 +90,8 @@ class GraphicInterface(Tk):
         self.listbox.grid(column=3, row=2, columnspan=2)
         logging.info('Графический интерфейс отрисован')
 
-
     def start(self):
         """Команда кнопки 'Запуск', инициализирует запуск парсера."""
         logging.info('Сработала кнопка "Запуск"')
         self.services.init_start()
+        self.done['text'] = f'Готово\nФайл сохранен на рабочем столе\nпод именем {RESULT_FILE_NAME}'
