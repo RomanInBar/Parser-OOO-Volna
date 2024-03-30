@@ -1,11 +1,21 @@
 import os
+from datetime import datetime
 
 
 desktop = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop')
-ROOT = 'Parser-OOO-Volna'
-PATH_TO_STORAGE = f'{ROOT}/database/storage.csv'
-PATH_TO_URLS = f'{ROOT}/urls.txt'
-RESULT_FILE_NAME = 'recieved_data.xlsx'
-PATH_TO_RESULT_FILE = f'{desktop}/{RESULT_FILE_NAME}'
-PATH_TO_LOG_FILE = f'{ROOT}/loges.log'
-PATH_TO_SPARE_STORAGE = f'{ROOT}/database/spare_storage.csv'
+date = datetime.now().date()
+
+ROOT = 'src'
+STORAGE_NAME = 'storage.csv'
+LOGFILE_NAME = 'loges.log'
+FINAL_FILE = f'Данные от {date}.xlsx'
+URLS_FILE = 'urls.csv'
+FILE_TITLES = ('Название', 'Количество')
+
+PATH_TO_STORAGE = f'{ROOT}/database/{STORAGE_NAME}'
+PATH_TO_URLS = f'{ROOT}/database/{URLS_FILE}'
+PAHT_TO_LOGFILE = f'{ROOT}/{LOGFILE_NAME}'
+SAVE_FINAL_FILE_TO = f'{desktop}/{FINAL_FILE}'
+
+URL_FLAG = 'url'
+STORAGE_FLAG = 'storage'
