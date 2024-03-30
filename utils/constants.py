@@ -5,7 +5,7 @@ from datetime import datetime
 desktop = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop')
 date = datetime.now().date()
 
-ROOT = 'src'
+ROOT = 'Parser-OOO-Volna'
 STORAGE_NAME = 'storage.csv'
 LOGFILE_NAME = 'loges.log'
 FINAL_FILE = f'Данные от {date}.xlsx'

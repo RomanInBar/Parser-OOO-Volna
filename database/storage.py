@@ -38,5 +38,5 @@ class Storage(AbstractStorage):
     def search(self, path: str, data: list[str]) -> bool:
         with open(path, 'r', encoding='utf8') as f:
             reader = csv.reader(f, delimiter=';')
-            result = bool(row for row in reader if row == data)
+            result = bool([row for row in reader if row[0] == data[0]])
             return result
