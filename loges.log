@@ -1,12 +1,2571 @@
-INFO [2024-03-30 19:48:52,688]: storage.py > read
+INFO [2024-03-30 20:36:04,119]: storage.py > read
     >>> Данные из хранилища загружены
-INFO [2024-03-30 19:48:52,689]: storage.py > read
+INFO [2024-03-30 20:36:04,119]: storage.py > read
     >>> Данные из хранилища загружены
-INFO [2024-03-30 19:48:52,689]: main.py > create_dict_structure
+INFO [2024-03-30 20:36:04,119]: main.py > create_dict_structure
     >>> Данные помещены в словарь
-INFO [2024-03-30 19:48:54,110]: storage.py > read
-    >>> Данные из хранилища загружены
-INFO [2024-03-30 19:48:54,111]: gui.py > draw_window_with_list_values
-    >>> Графический интерфейс отрисован
-INFO [2024-03-30 19:49:03,171]: gui.py > add_value
-    >>> Сработала кнопка "Добавить"
+INFO [2024-03-30 20:36:05,238]: gui.py > start
+    >>> Сработала кнопка "Запуск"
+INFO [2024-03-30 20:36:05,248]: parser.py > start_of_data_parsing
+    >>> HTML коды страниц получены
+ERROR [2024-03-30 20:36:05,956]: parser.py > scraping
+    >>> Ошибка во время запроса к апр
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 24, in scraping
+    response = requests.get(url).content
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Roman\Desktop\parserv2.0\venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Roman\Desktop\parserv2.0\venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Roman\Desktop\parserv2.0\venv\Lib\site-packages\requests\sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Roman\Desktop\parserv2.0\venv\Lib\site-packages\requests\sessions.py", line 486, in prepare_request
+    p.prepare(
+  File "C:\Users\Roman\Desktop\parserv2.0\venv\Lib\site-packages\requests\models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\Roman\Desktop\parserv2.0\venv\Lib\site-packages\requests\models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL 'апр': No scheme supplied. Perhaps you meant https://апр?
+INFO [2024-03-30 20:36:06,618]: parser.py > start_of_data_parsing
+    >>> HTML коды страниц распарсены
+INFO [2024-03-30 20:36:07,025]: parser.py > get_carts_of_products
+    >>> Карточки продуктов со страницы получены
+INFO [2024-03-30 20:36:07,030]: parser.py > get_carts_of_products
+    >>> Карточки продуктов со страницы получены
+INFO [2024-03-30 20:36:07,105]: parser.py > get_carts_of_products
+    >>> Карточки продуктов со страницы получены
+INFO [2024-03-30 20:36:07,111]: parser.py > get_carts_of_products
+    >>> Карточки продуктов со страницы получены
+INFO [2024-03-30 20:36:07,130]: parser.py > get_carts_of_products
+    >>> Карточки продуктов со страницы получены
+INFO [2024-03-30 20:36:07,134]: parser.py > get_carts_of_products
+    >>> Карточки продуктов со страницы получены
+INFO [2024-03-30 20:36:07,138]: parser.py > get_carts_of_products
+    >>> Карточки продуктов со страницы получены
+INFO [2024-03-30 20:36:07,143]: parser.py > get_carts_of_products
+    >>> Карточки продуктов со страницы получены
+INFO [2024-03-30 20:36:07,187]: parser.py > start_of_data_parsing
+    >>> Карточки продуктов получены
+INFO [2024-03-30 20:36:07,189]: parser.py > get_carts_of_products
+    >>> Карточки продуктов со страницы получены
+INFO [2024-03-30 20:36:07,189]: parser.py > get_carts_of_products
+    >>> Карточки продуктов со страницы получены
+INFO [2024-03-30 20:36:07,190]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,190]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,190]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,195]: parser.py > get_carts_of_products
+    >>> Карточки продуктов со страницы получены
+INFO [2024-03-30 20:36:07,195]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,196]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,196]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,196]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,196]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,196]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,196]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,197]: parser.py > start_of_data_parsing
+    >>> Данные из карточек получены
+INFO [2024-03-30 20:36:07,197]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,198]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,197]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,197]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,197]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,199]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,198]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,199]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,198]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,199]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,198]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,199]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,199]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,200]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,199]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,198]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,199]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,197]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,199]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,200]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,201]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,198]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,200]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,200]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,202]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,201]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,201]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,202]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,200]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,201]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,201]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,203]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,200]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,202]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,202]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,201]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,203]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,202]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,204]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,202]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,204]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,203]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,203]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,203]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,202]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,203]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,202]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,205]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,203]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,204]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,204]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,204]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,204]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,206]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,205]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,204]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,205]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,205]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,205]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,206]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,206]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,205]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,206]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,206]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,206]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,206]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,207]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,205]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,207]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,207]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,207]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,207]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,207]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,207]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,206]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,207]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,208]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,208]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,208]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,208]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,208]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,208]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,208]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,209]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,209]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,209]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,209]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,209]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,209]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,209]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,210]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,210]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,210]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,210]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,210]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,210]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,210]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,210]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,211]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,211]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,211]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,211]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,211]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,211]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,211]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,212]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,212]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,212]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,212]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,212]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,212]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,212]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,212]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,212]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,213]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,213]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,213]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,213]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,213]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,213]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,213]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,213]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,214]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,214]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,214]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,214]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,214]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,214]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,214]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,214]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,214]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,215]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,215]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,215]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,215]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,215]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,215]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,215]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,215]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,215]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,215]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,216]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,216]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,216]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,216]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,216]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,216]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,216]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,216]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,216]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,217]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,217]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,217]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,217]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,217]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,217]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,217]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,217]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,218]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,218]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,218]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,218]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,218]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,218]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,218]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,218]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,218]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,218]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,219]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,219]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,219]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,219]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,219]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,219]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,219]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,219]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,219]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,220]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,220]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,220]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,220]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,220]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,220]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,220]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,220]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,220]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,220]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,221]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,221]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,221]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,221]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,221]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,221]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,221]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,221]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,221]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,222]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,222]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,222]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,222]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,222]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,222]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,222]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,222]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,222]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,223]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,223]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,223]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,223]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,223]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,223]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,223]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,223]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,223]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,224]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,224]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,224]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,224]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,224]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,224]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,224]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,224]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,224]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,225]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,225]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,225]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,225]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,225]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,225]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,225]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,225]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,225]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,226]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,226]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,226]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,226]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,226]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,226]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,226]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,226]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,226]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,227]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,227]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,227]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,227]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,227]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,227]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,227]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,227]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,227]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,228]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,228]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,228]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,228]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,228]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,228]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,228]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,228]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,229]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,229]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,229]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,229]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,229]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,229]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,229]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,230]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,230]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,230]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,230]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,230]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,230]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,230]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,230]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,231]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,231]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,231]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,231]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,231]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,231]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,231]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,232]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,232]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,232]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,232]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,232]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,232]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,232]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+ERROR [2024-03-30 20:36:07,233]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,233]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,233]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,233]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,233]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,233]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,233]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,233]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,233]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,234]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,234]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,234]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,234]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,234]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,234]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,235]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,235]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,235]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,235]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,235]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,235]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,235]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,235]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,236]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,236]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,236]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,236]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+ERROR [2024-03-30 20:36:07,236]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,236]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,236]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,236]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,237]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,237]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,237]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,237]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,237]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,237]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,238]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,238]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,238]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,238]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,238]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,238]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,238]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,239]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,239]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,239]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,239]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,239]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,239]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,239]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,239]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,239]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,240]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+ERROR [2024-03-30 20:36:07,240]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,240]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,240]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,240]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,240]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,240]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,241]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,241]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,241]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,241]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+ERROR [2024-03-30 20:36:07,241]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,241]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,241]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,242]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,242]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,242]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,242]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,242]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,242]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,243]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,243]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,243]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,243]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,243]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,243]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,243]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,244]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+ERROR [2024-03-30 20:36:07,244]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,244]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,244]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,244]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,244]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,244]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,245]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,245]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,245]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,245]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+ERROR [2024-03-30 20:36:07,245]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,245]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,245]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,246]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,246]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,246]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,246]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,246]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,246]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,247]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,247]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,247]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,247]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,247]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,247]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,247]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,248]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+ERROR [2024-03-30 20:36:07,248]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,248]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,248]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,248]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,248]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,248]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,249]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,249]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,249]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,249]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+ERROR [2024-03-30 20:36:07,249]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,249]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,249]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,250]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,250]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,250]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,250]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,250]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,250]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,251]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,251]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,251]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,251]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,251]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,251]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,251]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,252]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+ERROR [2024-03-30 20:36:07,252]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,252]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,252]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,252]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,252]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,252]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,253]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,253]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,253]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,253]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+ERROR [2024-03-30 20:36:07,253]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,253]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,253]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,254]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,254]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,254]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,254]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,254]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,255]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,255]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,255]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,255]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,255]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,255]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,255]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,256]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,256]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,256]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,256]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,256]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,256]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,256]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,256]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,257]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,257]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,257]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,257]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,257]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,257]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,257]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,258]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,258]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,258]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,258]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,258]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,258]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,259]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,259]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,259]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,259]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,259]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,259]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,259]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,259]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,260]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,260]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,260]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,260]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,260]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,260]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,261]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,261]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,261]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,261]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,261]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,261]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,262]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,262]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,262]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,262]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,262]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,262]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,262]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,263]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,263]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,263]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,263]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,263]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,263]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,263]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,264]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,264]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,264]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,264]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,264]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,264]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,264]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,265]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,265]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,265]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,265]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,265]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,266]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,266]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,266]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,266]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,266]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,266]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,266]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,266]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,266]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,266]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,266]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,267]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,267]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,267]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,267]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,267]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,267]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,268]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,268]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,268]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,268]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,268]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,269]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,269]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,269]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,269]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,269]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,269]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,270]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,270]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,270]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,270]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,270]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,270]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,270]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,270]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,271]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,271]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,271]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,271]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,271]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,272]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,272]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,272]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,272]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,272]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,272]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,273]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,273]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,273]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,273]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,273]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,273]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,273]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,274]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,274]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,274]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,274]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,274]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,274]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,275]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,275]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,275]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,275]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,275]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,275]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,275]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,276]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,276]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,276]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,276]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,276]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,276]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,276]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,277]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,277]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,277]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,277]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,277]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,278]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,278]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,278]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+ERROR [2024-03-30 20:36:07,278]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,278]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,278]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,279]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,279]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,279]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,279]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,279]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,279]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,280]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,280]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,280]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,280]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,280]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,280]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,281]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,281]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,281]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,281]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,281]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,282]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+ERROR [2024-03-30 20:36:07,282]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,282]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,282]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,282]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,283]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,283]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,283]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,283]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,283]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,284]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,284]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,284]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,284]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,284]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,284]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,284]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,285]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,285]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+ERROR [2024-03-30 20:36:07,285]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,285]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,285]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,285]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,286]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,286]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,286]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,286]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,286]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,287]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,287]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,287]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,287]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,287]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,287]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,287]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,287]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,288]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+ERROR [2024-03-30 20:36:07,288]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,288]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,288]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,288]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,288]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,289]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,289]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,289]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,289]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,289]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,289]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,290]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,290]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,290]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,290]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,290]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,290]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,290]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+ERROR [2024-03-30 20:36:07,291]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,291]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,291]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,291]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,291]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,292]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,292]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,292]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,292]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,292]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,292]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,292]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,293]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,293]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,293]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,293]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,293]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,293]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+ERROR [2024-03-30 20:36:07,294]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,294]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,294]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,294]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,294]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,294]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,295]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,295]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,295]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,295]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,295]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,295]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,296]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,296]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,296]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,296]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,296]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,296]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+ERROR [2024-03-30 20:36:07,296]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,297]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,297]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,297]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,297]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,297]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,298]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,298]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,298]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,298]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,298]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,298]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,298]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,299]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,299]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,299]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,299]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,299]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+ERROR [2024-03-30 20:36:07,299]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,301]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,300]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,300]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,300]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,301]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,300]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,301]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,302]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,301]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,301]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,302]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,301]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,302]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,303]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,303]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,303]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,303]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,303]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,304]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,304]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,304]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,304]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,304]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,304]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,305]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,305]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,305]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,305]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,305]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,305]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,305]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,306]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,306]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,306]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,306]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,306]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,306]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,307]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,307]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,307]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,307]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,307]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,307]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,307]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,308]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,308]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,308]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,308]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,308]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,308]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,309]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,309]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,309]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,309]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,309]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,309]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,310]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,310]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,310]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,310]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,310]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,311]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,311]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,311]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,311]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,311]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,311]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,311]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,311]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,312]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,312]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,312]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,312]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,312]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,312]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,313]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,313]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,313]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,313]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,313]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,313]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,313]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,313]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,314]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,314]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,314]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,314]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,314]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,314]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,315]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,315]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,315]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,315]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,315]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,315]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,315]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,316]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,316]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,316]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,316]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,316]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,316]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,316]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,317]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,317]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,317]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,317]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+ERROR [2024-03-30 20:36:07,317]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,317]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,317]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,318]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,318]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,318]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,318]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,318]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,318]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,318]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,318]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,320]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,320]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,320]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,320]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,320]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,320]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,320]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,320]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,320]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,320]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,320]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,320]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,320]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,322]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,322]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,322]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,322]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,322]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,322]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,322]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,322]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,323]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,323]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,323]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,323]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,323]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,323]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,323]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,323]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,323]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,323]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,323]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,324]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,324]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,324]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,324]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,324]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,324]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,324]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,324]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,324]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,324]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,324]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,324]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,325]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,325]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,325]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,325]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,325]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,325]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,325]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,325]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,325]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,325]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,325]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,325]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,326]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,326]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,326]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,326]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,326]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,326]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,326]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,326]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,326]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,326]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,326]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,326]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,327]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,327]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,327]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,327]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,327]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,327]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,327]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,327]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,327]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,327]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,327]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,327]: parser.py > get_data_from_card
+    >>> Название товара получено
+INFO [2024-03-30 20:36:07,328]: parser.py > get_data_from_card
+    >>> Данные о количестве получены
+INFO [2024-03-30 20:36:07,328]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,328]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,328]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,328]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,328]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,328]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,329]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,329]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,329]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,329]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,329]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,329]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,330]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,330]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,330]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,330]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,330]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,330]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,331]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,331]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,331]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,331]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,331]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,331]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,332]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,332]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,332]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,332]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,332]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,332]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,333]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,333]: parser.py > get_data_from_card
+    >>> Название товара получено
+ERROR [2024-03-30 20:36:07,333]: parser.py > get_data_from_card
+    >>> Возникла ошибка при колучении данных о количестве
+Traceback (most recent call last):
+  File "c:\Users\Roman\Desktop\parserv2.0\Parser-OOO-Volna\parser\parser.py", line 102, in get_data_from_card
+    data = card.find(attrs={'class': 'product-item-quantity'}).text.strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
+INFO [2024-03-30 20:36:07,333]: parser.py > get_data_from_card
+    >>> Получены данные о товаре
+INFO [2024-03-30 20:36:07,334]: parser.py > create
+    >>> [XLSX] Файл создан
+INFO [2024-03-30 20:36:07,335]: parser.py > create
+    >>> [XLSX] Данные добавлены
+INFO [2024-03-30 20:36:07,350]: parser.py > create
+    >>> [XLSX] Файл сохранен
+INFO [2024-03-30 20:36:07,351]: parser.py > start
+    >>> Инициирую завершающий метод из "одчереди"

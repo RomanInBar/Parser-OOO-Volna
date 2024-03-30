@@ -67,7 +67,7 @@ class GInterface(Tk):
             func = self.draw_window_with_list_values
             value = self.valuesbox.curselection()
             path = PATH_TO_STORAGE
-        elif hasattr(self, 'urlbox') and self.urlsbox.curselection():
+        elif hasattr(self, 'urlsbox') and self.urlsbox.curselection():
             func = self.draw_urls_window
             value = self.urlsbox.curselection()
             path = PATH_TO_URLS

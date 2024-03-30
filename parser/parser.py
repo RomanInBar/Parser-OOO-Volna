@@ -20,8 +20,12 @@ class Parser(AbstractParser):
 
     def scraping(self, url: str) -> str:
         """Отправляет GET запрос на указанный url, возвращает html код."""
-        response = requests.get(url).content
-        return response
+        try:
+            response = requests.get(url).content
+            return response
+        except Exception as error:
+            logging.exception(f'Ошибка во время запроса к {url}', exc_info=error)
+            return ''
 
     def create_soup(self, html: str) -> list[bs]:
         """Возвращает объект BeautifulSoup распарсенного html кода."""
@@ -54,7 +58,8 @@ class Parser(AbstractParser):
             logging.info('Карточки продуктов получены')
             data = pool.map(self.get_data, cards)
             logging.info('Данные из карточек получены')
-            return data
+            if data:
+                return data
 
     def start(self):
         """Запускает работу парсера."""
